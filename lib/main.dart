@@ -28,7 +28,11 @@ main(){
       print("Mineure");
     }
   }else if(age == 18){
-    print("Age Complique");
+    if(sexe == "Masculin"){
+      print("Age compliqué M");
+    }else if(sexe == "Féminin"){
+      print("Age compliqué F");
+    }
   }else{
     if(sexe == "Masculin"){
       print("Majeur");
@@ -37,6 +41,10 @@ main(){
     }
   }
 
-  // TERCIAIRE
-  
+  // TERNAIRE
+  print ((age < 18) ? 
+  ((sexe=="Masculin") ? "Homme Mineur" : "Femme mineure" ) : 
+  ((sexe=="Masculin") ? "Homme Majeur" : "Femme Majeure" )); 
 }
+
+
