@@ -50,7 +50,7 @@ main(){
 
 // COLLECTIONS
 //LIST
-// List <int> ages = [13,20, 24, 10, 2];
+//  ages = [13,20, 24, 10, 2];
 // List <String> noms = [" Ulric","Chadrac","Lucia"];
 // bool x = false;
 
@@ -77,6 +77,35 @@ main(){
 // print(x);
 
 // MAP
+  Map <String, String> user = {
+    "nom":"KAMBERE",
+    "prenom":"Ulric",
+    "sexe":"F",
+    "age":"19"
+  };
+
+  List <String> ulric = ["19","M","KRATOS"];
+  List <String> chad = ["26","M","KRATOS"];
+
+  Map <String, List> fullUser = {
+    "Ulric":ulric,
+    "Chadrac":chad
+  };
+  Map <List, List> testUser = {
+    
+  };
+
+  //print(user["sexe"]);
+  print("Dans la collection USER avons-nous une clé 'sexe' ? : ${user.containsKey("sexe")}");
+
+  //print(user["nom"] == "Chadrac");
+
+  // user["sexe"] = "X";
+  // print(user["sexe"]);
+  print("Dans la collection USER avons-nous une valeur 'Chadrac' ? : ${user.containsValue("Chadrac")}");
+
+  user.remove("sexe");
+  print("Dans la collection USER avons-nous une clé 'sexe' ? : ${user.containsKey("sexe")}");
 }
 
 
